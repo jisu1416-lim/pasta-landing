@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', 'Malgun Gothic', sans-serif;
+  color: #3b2a1e;
+  background: #fffaf2;
+  line-height: 1.6;
+}
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 24px; background: #fff; position: sticky; top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.logo { font-weight: 700; font-size: 1.2rem; }
+.nav a { margin-left: 16px; color: #3b2a1e; text-decoration: none; }
+.nav a:hover { color: #d9531e; }
+.hero {
+  text-align: center; padding: 96px 24px;
+  background: linear-gradient(135deg, #ffe0b2, #ffb74d);
+}
+.hero h1 { font-size: clamp(1.8rem, 6vw, 3rem); margin-bottom: 12px; }
+.hero p { margin-bottom: 24px; font-size: 1.1rem; }
+.btn {
+  display: inline-block; padding: 12px 28px; border-radius: 999px;
+  background: #d9531e; color: #fff; text-decoration: none; font-weight: 600;
+}
+.btn:hover { background: #b84316; }
+.section { padding: 64px 24px; max-width: 960px; margin: 0 auto; text-align: center; }
+.section.alt { max-width: none; background: #fff3e0; }
+.section.alt p { max-width: 640px; margin: 0 auto; }
+.section h2 { margin-bottom: 24px; font-size: 1.8rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.card {
+  background: #fff; border-radius: 16px; padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: transform .2s;
+}
+.card:hover { transform: translateY(-4px); }
+.emoji { font-size: 3rem; }
+.card h3 { margin: 8px 0; }
+.card p { margin-bottom: 12px; font-size: .95rem; }
+footer { text-align: center; padding: 24px; background: #3b2a1e; color: #fff; font-size: .9rem; }
